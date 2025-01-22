@@ -1,0 +1,83 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Donation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #09bab1;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Clothing Donation Platform</h1>
+    </header>
+  
+    <section id="problem-statement">
+      <h2>Problem Statement</h2>
+      <p>Every year, millions of people face challenges accessing basic clothing due to poverty or disasters. While many individuals and organizations are willing to donate, the lack of an efficient platform to manage and track donations results in wastage and unmet needs.</p>
+    </section>
+  
+    <section id="solution">
+      <h2>Solution</h2>
+      <p>This platform bridges the gap between donors and recipients by providing a streamlined interface to manage donations. It ensures transparency, tracks donations, and facilitates timely distribution to those in need.</p>
+    </section>
+  
+    <section id="images">
+      <h2>Project Images</h2>
+      <div class="image-container">
+        <img src="Screenshot 2025-01-21 105110.png" alt="Donation Form" class="project-image">
+        <img src="Screenshot 2025-01-21 105134.png" alt="Tracking Page" class="project-image">
+      </div>
+    </section>
+    <section id="back-to-home">
+      <button class="home-button" onclick="goHome1()">Back to Home</button>
+    </section>
+    <footer>
+      <p>&copy; 2025 Clothing Donation Platform</p>
+    </footer>
+     
+  <script>
+    function goHome1() {
+      window.location.href = "index.html"; // Redirect to the homepage
+    }</script>
+    
+  </body>
+  </html>

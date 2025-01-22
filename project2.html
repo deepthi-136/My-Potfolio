@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Design UI/UX</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #09bab1;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Club Web Application</h1>
+  </header>
+
+  <section id="problem-statement">
+    <h2>Problem Statement</h2>
+    <p>College clubs often lack a professional and engaging online presence to attract and manage members effectively. The absence of a user-friendly interface results in difficulties for users to access event details, join activities, or communicate with the club.</p>
+  </section>
+
+  <section id="solution">
+    <h2>Solution</h2>
+    <p>Designed an intuitive and visually appealing user interface for the club's web application using Figma. The design prioritizes ease of navigation, clear communication of event details, and a modern aesthetic to engage users effectively.</p>
+  </section>
+
+  <section id="images">
+    <h2>Project Images</h2>
+    <div class="image-container">
+      <img src="webapps.png" alt="Dashboard Design" class="project-image">
+      <img src="webapps2.png" alt="Event Page Design" class="project-image">
+    </div>
+  </section>
+
+  <section id="tools-used">
+    <h2>Tools Used</h2>
+    <ul>
+      <li><strong>Figma:</strong> For designing the user interface.</li>
+      <li><strong>HTML/CSS:</strong> For translating the design into a functional web application.</li>
+    </ul>
+  </section>
+  <section id="back-to-home">
+    <button class="home-button" onclick="goHome()">Back to Home</button>
+  </section>
+  <footer>
+    <p>&copy; 2025 College Club Web Application</p>
+  </footer>
+  <script>
+    function goHome() {
+      window.location.href = "index.html"; // Redirect to the homepage
+    }
+  </script>
+</body>
+</html>

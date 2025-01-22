@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - S.Deepthi</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #02ba95;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header ul li {
+    margin: 0 10px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #home {
+    background: #f4f4f4;
+    padding: 40px 20px;
+  }
+  
+  #projects .project {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact form input, #contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    padding: 10px;
+    background: #0fc0ae;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background: #09cecb;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .project-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Container for projects */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual project card */
+.project {
+  flex: 1 1 45%; /* Adjust the width of each project */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Project images */
+.project-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.project-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #17ccab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.project-button:hover {
+  background-color: #18a8bb;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>S. Deepthi Lakshmi</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I’m a second-year student passionate about coding and creating impactful projects.
+        I’m eager to find an internship to gain practical experience and grow my skills.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Deepthi Lakshmi, a second-year student passionate about technology and design.
+        I have skills in C, Figma, Bootstrap, HTML, and CSS, which I use to create user-friendly designs and websites.
+        I’m eager to learn, grow, and take on new challenges to enhance my expertise and make an impact.
+        </p>
+
+  </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project">
+            <img src="Screenshot 2025-01-21 105110.png" alt="Clothing Donation Platform" class="project-image">
+            <h3>Clothing Donation Platform</h3>
+            <p>A platform designed to help individuals and organizations donate clothing effectively. 
+            Currently, I am working on designing the user interface using HTML and CSS to create a clean and user-friendly experience.</p>
+            <button class="project-button" onclick="navigateTo('project1.html')">View Project</button>
+        
+          </div>
+          
+          
+          <div class="project">
+            <img src="webapps.png" alt="College Club Web Application" class="project-image">
+            <h3>College Club Web Application</h3>
+            <p>Contributed to the UI/UX design of a web application for my college club using Figma. 
+            Focused on creating intuitive layouts and enhancing user experience to meet project goals.</p>
+            <button class="project-button" onclick="navigateTo('project2.html')">View Project</button>
+
+          </div>
+        </div>
+      </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/your-email" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>console.log("Portfolio loaded!");
+    function navigateTo(page) {
+  window.location.href = page; 
+}
+  </script>
+</body>
+</html>
